@@ -11,12 +11,12 @@ class CCircle {
         return (float) r * (float) r * (float) pi;
     }
 
-    int area(int r) {
-        return (int) (r * r * pi);
+    double area(int r) {
+        return r * r * pi;
     }
 }
 
-public class Class13 {
+class Class13 {
     public static void main(String[] argv) {
         CCircle c = new CCircle();
         System.out.println(c.area(2));
