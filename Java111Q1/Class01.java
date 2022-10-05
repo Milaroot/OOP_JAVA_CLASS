@@ -3,7 +3,7 @@ package Java111Q1;
 class sol {
     void Cal_area(int x) {
         System.out.printf("半徑 = %d", x);
-        System.out.printf("球型體積 = %f", 4 / 3 * 3.14159 * (x * x * x));
+        System.out.printf("球型體積 = %f", (4 / 3) * 3.14159 * (x * x * x));
     }
 
     void Cal_area(int x, int y, int z) {
