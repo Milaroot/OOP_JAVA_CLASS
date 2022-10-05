@@ -2,12 +2,12 @@ package Java111Q1;
 
 class sol {
     void Cal_area(int x) {
-        System.out.printf("半徑 = %d", x);
-        System.out.printf("球型體積 = %f", (4 / 3) * 3.14159 * (x * x * x));
+        System.out.printf("半徑 = %d\n", x);
+        System.out.printf("球型體積 = %f\n", (4 / 3) * 3.14159 * (x * x * x));
     }
 
     void Cal_area(int x, int y, int z) {
-        System.out.printf("長 = %d, 寬 = %d, 高 = %d", x, y, z);
+        System.out.printf("長 = %d, 寬 = %d, 高 = %d\n", x, y, z);
         System.out.printf("立方體表面積 = %d", 2 * (x * y) + 2 * (x * z) + 2 * (y * z));
 
     }
