@@ -17,7 +17,7 @@ class sol {
 public class Class01 {
     public static void main(String[] main) {
         sol s1 = new sol();
-        sol.Cal_area(10);
-        sol.Cal_area(4, 5, 6);
+        s1.Cal_area(10);
+        s1.Cal_area(4, 5, 6);
     }
 }
