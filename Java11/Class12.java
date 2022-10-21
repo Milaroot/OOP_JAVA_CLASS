@@ -27,20 +27,20 @@ class CStu implements Test {
 
     public void best() {
         if (math > english) {
-            System.out.printf("%s的數學比英文好", name);
+            System.out.printf("%s的數學比英文好\n", name);
         } else if (math < english) {
-            System.out.printf("%s的英文比數學好", name);
+            System.out.printf("%s的英文比數學好\n", name);
         } else {
-            System.out.printf("%s的成績一樣爛", name);
+            System.out.printf("%s的成績一樣爛\n", name);
         }
     };
 
     public void failed() {
         if (math < 60) {
-            System.out.printf("%s的數學被當了", name);
+            System.out.printf("%s的數學被當了\n", name);
         }
         if (english < 60) {
-            System.out.printf("%s的英文被當了", name);
+            System.out.printf("%s的英文被當了\n", name);
         }
     };
 
@@ -58,6 +58,8 @@ class CStu implements Test {
     public void show() {
         showData();
         average();
+        best();
+        failed();
     };
 }
 
