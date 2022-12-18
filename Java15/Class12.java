@@ -10,7 +10,7 @@ class CTest extends Thread implements Runnable {
     public void run() {
         for (int i = 1; i <= 5; i++) {
             try {
-                sleep((int) (Math.random() * 2000)); // ans
+                sleep((int) (Math.random() * 2000));
 
                 for (int j = 0; j < 100000000; j++)
                     ;
