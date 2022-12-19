@@ -1,6 +1,6 @@
 // hw10_1
 
-package Java10;
+package Java10.Class01;
 
 class Caaa {
     public int num1;

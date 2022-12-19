@@ -1,6 +1,6 @@
 package Java15;
 
-class CTest extends Thread implements Runnable {
+class CTest implements Runnable {
     private String id;
 
     public CTest(String str) {
@@ -9,19 +9,14 @@ class CTest extends Thread implements Runnable {
 
     public void run() {
         for (int i = 1; i <= 5; i++) {
-            try {
-                sleep((int) (Math.random() * 2000));
-
-                for (int j = 0; j < 100000000; j++)
-                    ;
-                System.out.println(id + " " + i);
-            } catch (InterruptedException e) {
-            }
+            for (int j = 0; j < 100000000; j++)
+                ;
+            System.out.println(id + " " + i);
         }
     }
 }
 
-public class Class10 {
+public class Class12 {
     public static void main(String[] args) {
         CTest hi = new CTest("Hello");
         CTest bye = new CTest("Good bye");
@@ -34,8 +29,17 @@ public class Class10 {
         Thread t4 = new Thread(night);
 
         t1.start();
-        t2.start();
-        t3.start();
-        t4.start();
+        try {
+            t1.join();
+            t3.start();
+            t3.join();
+            t4.start();
+            t4.join();
+            t2.start();
+            t2.join();
+        } catch (InterruptedException e) {
+        } finally {
+            System.out.println("All Threads are finished");
+        }
     }
 }
