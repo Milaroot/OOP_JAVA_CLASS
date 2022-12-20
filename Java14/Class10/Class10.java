@@ -51,7 +51,7 @@ public class Class10 {
                 finalIndex -= 1;
             }
         }
-        FileWriter fwr2 = new FileWriter("Class10/rand.txt");
+        FileWriter fwr2 = new FileWriter("Class10/rand2.txt");
         BufferedWriter bwr2 = new BufferedWriter(fwr2);
         for (int i = 0; i < 1000; i++) {
             bwr2.write(Integer.toString(number_ar[i]));
